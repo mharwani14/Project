@@ -4,6 +4,7 @@ const express=require('express')
 const http=require('http')
 const app=express();
 app.use(express.json())
+const db=require("./db");
 let data=[]
 app.post('/hello', (req, res)=> {
     console.log(req.body)
